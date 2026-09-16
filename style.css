@@ -58,7 +58,7 @@ a:hover {
 
 
 /* =========================================================
-   NAVIGATION
+   TOP NAVIGATION
    ========================================================= */
 
 .site-header {
@@ -72,17 +72,8 @@ a:hover {
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   min-height: 70px;
-  gap: 30px;
-}
-
-.site-name {
-  color: var(--navy);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.35rem;
-  font-weight: bold;
-  text-decoration: none;
 }
 
 nav {
@@ -127,15 +118,6 @@ nav a:hover {
   max-width: 680px;
 }
 
-.eyebrow {
-  margin: 0 0 5px;
-  color: var(--gold);
-  font-size: 0.9rem;
-  font-weight: bold;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 
 /* =========================================================
    HEADINGS
@@ -152,7 +134,7 @@ h4 {
 
 h1 {
   margin: 0 0 18px;
-  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
   font-weight: normal;
 }
 
@@ -178,11 +160,16 @@ h4 {
 
 
 /* =========================================================
-   HOMEPAGE TEXT AND BUTTONS
+   HOMEPAGE TEXT AND LINKS
    ========================================================= */
 
 .lead {
   font-size: 1.15rem;
+}
+
+.job-market {
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 .affiliation {
@@ -194,26 +181,16 @@ h4 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 10px 24px;
   margin: 28px 0;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 18px;
-  color: white;
-  background: var(--navy);
-  border-radius: 3px;
-  text-decoration: none;
-}
-
-.button:hover {
-  color: white;
-  background: var(--blue);
 }
 
 .text-link {
   font-weight: bold;
+}
+
+.email-contact {
+  color: var(--text);
 }
 
 
@@ -265,6 +242,10 @@ h4 {
   margin-bottom: 0;
 }
 
+.paper-title {
+  margin-bottom: 14px;
+}
+
 .paper-note {
   margin-top: 5px;
   color: var(--muted);
@@ -292,14 +273,18 @@ h4 {
 
 .paper-status {
   display: inline-block;
-  margin: 8px 0 12px;
-  padding: 5px 11px;
+  margin-left: 10px;
+  padding: 3px 9px;
   color: #6c5518;
   background: #f8efd5;
   border: 1px solid #dec985;
   border-radius: 3px;
-  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
   font-weight: bold;
+  line-height: 1.4;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
 
@@ -392,9 +377,8 @@ footer a:hover {
   }
 
   .navigation {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
+    justify-content: flex-start;
+    min-height: auto;
     padding: 14px 0;
   }
 
@@ -414,7 +398,7 @@ footer a:hover {
   }
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
 
   h2 {
@@ -423,7 +407,7 @@ footer a:hover {
 
   .section {
     padding: 50px 0;
-    scroll-margin-top: 120px;
+    scroll-margin-top: 90px;
   }
 
   .research-category {
@@ -432,6 +416,11 @@ footer a:hover {
 
   .featured-paper {
     padding: 21px;
+  }
+
+  .paper-status {
+    margin-top: 7px;
+    margin-left: 0;
   }
 
   .footer-content {
