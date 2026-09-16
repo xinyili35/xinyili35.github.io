@@ -149,13 +149,13 @@ h2 {
 
 h3 {
   margin-top: 0;
-  font-size: 1.45rem;
+  font-size: 1.4rem;
 }
 
 h4 {
   margin-top: 0;
   margin-bottom: 8px;
-  font-size: 1.25rem;
+  font-size: 1.08rem;
 }
 
 
@@ -243,13 +243,20 @@ h4 {
 }
 
 .paper-title {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
+  font-size: 1.08rem;
 }
 
-.paper-note {
-  margin-top: 5px;
+.coauthor-inline {
   color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
   font-style: italic;
+  font-weight: normal;
+}
+
+.coauthor-inline a {
+  font-weight: normal;
 }
 
 .paper-links {
@@ -265,25 +272,22 @@ h4 {
    ========================================================= */
 
 .featured-paper {
-  padding: 28px;
-  background: white;
-  border: 1px solid var(--border);
-  border-left: 5px solid var(--gold);
+  padding: 0;
+  background: transparent;
+  border: none;
 }
 
 .paper-status {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 3px 9px;
-  color: #6c5518;
-  background: #f8efd5;
-  border: 1px solid #dec985;
-  border-radius: 3px;
+  display: inline;
+  margin-left: 8px;
+  padding: 0;
+  color: var(--muted);
+  background: transparent;
+  border: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.75rem;
-  font-weight: bold;
-  line-height: 1.4;
-  vertical-align: middle;
+  font-size: 0.88rem;
+  font-style: italic;
+  font-weight: normal;
   white-space: nowrap;
 }
 
@@ -316,11 +320,11 @@ details p {
    ========================================================= */
 
 .work-in-progress {
-  margin-bottom: 25px;
-  padding-bottom: 18px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
 }
 
-.work-in-progress .paper-note {
+.work-in-progress .paper-title {
   margin-bottom: 0;
 }
 
@@ -329,12 +333,36 @@ details p {
    TEACHING
    ========================================================= */
 
+.teaching-institution {
+  margin-bottom: 30px;
+  font-size: 1.15rem;
+  font-weight: normal;
+}
+
+.course-group {
+  margin-top: 32px;
+}
+
+.course-level {
+  margin-bottom: 15px;
+  color: var(--navy);
+  font-size: 1.05rem;
+}
+
 .teaching-list {
+  margin-top: 0;
   padding-left: 22px;
 }
 
 .teaching-list li {
-  margin-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.course-evaluation {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 
@@ -414,13 +442,12 @@ footer a:hover {
     margin-top: 42px;
   }
 
-  .featured-paper {
-    padding: 21px;
+  .paper-status {
+    white-space: normal;
   }
 
-  .paper-status {
-    margin-top: 7px;
-    margin-left: 0;
+  .coauthor-inline {
+    display: inline;
   }
 
   .footer-content {
