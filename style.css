@@ -365,6 +365,13 @@ details p {
   font-size: 0.92rem;
 }
 
+.syllabus-link {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.92rem;
+  font-weight: bold;
+}
+
 
 /* =========================================================
    FOOTER
