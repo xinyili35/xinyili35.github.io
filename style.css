@@ -312,8 +312,10 @@ summary:hover {
 
 details p {
   margin-bottom: 0;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
-
 
 /* =========================================================
    WORK IN PROGRESS
