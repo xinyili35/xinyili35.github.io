@@ -300,6 +300,30 @@ h4 {
    ABSTRACTS
    ========================================================= */
 
+/* Always-visible abstract for the job market paper */
+
+.jmp-abstract {
+  margin-top: 18px;
+}
+
+.abstract-label {
+  margin-top: 0;
+  margin-bottom: 6px;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.abstract-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+
+/* Drop-down abstracts for other papers */
+
 details {
   margin-top: 18px;
 }
@@ -320,6 +344,7 @@ details p {
   text-justify: inter-word;
   hyphens: auto;
 }
+
 
 /* =========================================================
    WORK IN PROGRESS
