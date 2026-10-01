@@ -114,6 +114,18 @@ nav a:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
+.profile-column {
+  width: 100%;
+  max-width: 320px;
+}
+
+.portrait-address {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
 .introduction {
   max-width: 680px;
 }
@@ -463,9 +475,13 @@ footer a:hover {
      padding-top: 40px;
    }
 
-  .headshot {
-    max-width: 270px;
-  }
+  .profile-column {
+     max-width: 270px;
+   }
+   
+   .headshot {
+     max-width: 270px;
+   }
 
   h1 {
     font-size: 2.2rem;
