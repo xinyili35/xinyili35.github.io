@@ -1,46 +1,488 @@
-.hero {
-  display: grid;
-  grid-template-columns: minmax(220px, 320px) 1fr;
-  grid-template-areas:
-    "profile name"
-    "profile introduction";
-  column-gap: 65px;
-  row-gap: 0;
-  align-items: start;
-  padding-top: 75px;
-  padding-bottom: 35px;
-}
+<!doctype html>
+<html lang="en">
 
-.profile-name {
-  grid-area: name;
-}
+<head>
+  <meta charset="utf-8">
 
-.profile-column {
-  grid-area: profile;
-  width: 100%;
-  max-width: 320px;
-  text-align: center;
-}
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 
-.headshot {
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
-  border-radius: 3px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
+  <meta
+    name="description"
+    content="Xinyi Li, Ph.D. candidate in Economics at the University of Notre Dame."
+  >
 
-.portrait-address {
-  margin-top: 16px;
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.5;
-  text-align: center;
-}
+  <title>Xinyi Li | Economics</title>
 
-.introduction {
-  grid-area: introduction;
-  max-width: 680px;
-}
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP NAVIGATION -->
+  <header class="site-header">
+    <div class="container navigation">
+
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+
+        <a
+          href="Xinyi_Li_CV.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          CV
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HOME -->
+    <section class="hero container" id="home">
+
+      <!-- The position of this heading is controlled by CSS -->
+      <h1 class="profile-name">Xinyi Li</h1>
+
+      <!-- PORTRAIT AND ADDRESS -->
+      <div class="profile-column">
+
+        <img
+          class="headshot"
+          src="Xinyi Li.jpg"
+          alt="Portrait of Xinyi Li"
+        >
+
+        <p class="portrait-address">
+          3060 Jenkins Nanovic Hall<br>
+          University of Notre Dame<br>
+          Notre Dame, IN 46556
+        </p>
+
+      </div>
+
+
+      <!-- BIOGRAPHY -->
+      <div class="introduction">
+
+        <p class="lead">
+          I am a Ph.D. candidate in Economics at the
+          <a
+            href="https://economics.nd.edu/"
+            target="_blank"
+            rel="noopener"
+          >
+            University of Notre Dame.
+          </a>
+        </p>
+
+        <p>
+          My research lies at the intersection of macroeconomics,
+          development economics, and spatial economics, focusing on
+          the aggregate and distributional consequences of public
+          policies and economic transitions through firm dynamics
+          and worker reallocation.
+        </p>
+
+        <p>
+          I am a Doctoral Student Affiliate at the
+          <a
+            href="https://kellogg.nd.edu/"
+            target="_blank"
+            rel="noopener"
+          >
+            Kellogg Institute for International Studies,
+          </a>
+          and a graduate student affiliate of the
+          <a
+            href="https://biglab.nd.edu/"
+            target="_blank"
+            rel="noopener"
+          >
+            Building Inclusive Growth (BIG) Lab.
+          </a>
+        </p>
+
+        <p class="job-market">
+          <strong>I am on the 2026–2027 job market.</strong>
+        </p>
+
+        <div class="main-links">
+
+          <a
+            class="text-link"
+            href="Xinyi_Li_CV.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            Curriculum Vitae
+          </a>
+
+          <span class="email-contact">
+            Email:
+            <a
+              class="text-link"
+              href="mailto:xli35@nd.edu"
+            >
+              xli35@nd.edu
+            </a>
+          </span>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- RESEARCH -->
+    <section
+      class="section highlighted-section"
+      id="research"
+    >
+
+      <div class="container">
+
+        <h2>Research</h2>
+
+
+        <!-- JOB MARKET PAPER -->
+        <div class="research-category">
+
+          <h3 class="subsection-title">
+            Job Market Paper
+          </h3>
+
+          <article class="paper featured-paper">
+
+            <h4 class="paper-title">
+              “Place-Based Policy Through Land: Firm Selection,
+              Spatial Misallocation, and Rural-Urban Redistribution”
+
+              <span class="paper-status">
+                Draft coming soon
+              </span>
+            </h4>
+
+            <div class="jmp-abstract">
+
+              <p class="abstract-label">
+                Abstract
+              </p>
+
+              <p class="abstract-text">
+                This paper studies how the preferential allocation of
+                urban land to industrial use affects productivity,
+                output and welfare through firm selection and
+                rural-urban migration, using China's primary urban land
+                market as an empirical setting. The data suggests that
+                prefectures where industrial land is cheaper allocate
+                more land and employment to manufacturing and sustain
+                more firms, yet have lower average productivity and
+                only modestly higher manufacturing output. In
+                particular, the discounted industrial land sustains
+                marginal unproductive firms and weakens selection,
+                with rural migrants accounting for much of the
+                employment growth. The paper then develops a spatial
+                equilibrium model with heterogeneous firms,
+                rural-urban migration and land allocation to quantify
+                the aggregate and distributional impacts of land price
+                wedges. Eliminating within-prefecture land price
+                wedges reduces manufacturing output by 5.2% but raises
+                average productivity by about 7%, primarily driven by
+                improved firm selection. The welfare impacts are
+                distributional: urban welfare increases by 2.3%,
+                driven mainly by lower housing prices, whereas rural
+                welfare falls by 0.6% as urban manufacturing labor
+                demand contracts. Furthermore, the inefficiency lies
+                primarily in where industrial land is allocated rather
+                than its aggregate share. These findings imply that
+                evaluating place-based industrial policy requires
+                considering not only output and employment, but also
+                which firms produce, where production occurs, and who
+                gains or loses.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!--
+        WORKING PAPERS TEMPLATE — CURRENTLY HIDDEN
+
+        <div class="research-category">
+
+          <h3 class="subsection-title">
+            Working Papers
+          </h3>
+
+          <article class="paper">
+
+            <h4 class="paper-title">
+              “Title of Working Paper”
+
+              <span class="coauthor-inline">
+                — Joint with
+                <a
+                  href="https://coauthor-website.com/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Coauthor Name
+                </a>
+              </span>
+            </h4>
+
+            <p class="paper-links">
+              <a
+                href="working-paper.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                Paper
+              </a>
+            </p>
+
+            <details>
+              <summary>Abstract</summary>
+
+              <p>
+                Paste the abstract of the working paper here.
+              </p>
+            </details>
+
+          </article>
+        </div>
+
+        END OF HIDDEN WORKING PAPERS TEMPLATE
+        -->
+
+
+        <!-- WORK IN PROGRESS -->
+        <div class="research-category">
+
+          <h3 class="subsection-title">
+            Work in Progress
+          </h3>
+
+
+          <!-- FIRST PROJECT -->
+          <article class="paper work-in-progress">
+
+            <h4 class="paper-title">
+              “Energy Transition and Their Distributional Impacts:
+              2005 and 2050”
+
+              <span class="coauthor-inline">
+                — Joint with
+                <a
+                  href="https://sites.google.com/view/danchen-zhao"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Danchen Zhao
+                </a>
+              </span>
+            </h4>
+
+          </article>
+
+
+          <!-- SECOND PROJECT -->
+          <article class="paper work-in-progress">
+
+            <h4 class="paper-title">
+              “How Free is Free Entry”
+
+              <span class="coauthor-inline">
+                — Joint with
+                <a
+                  href="https://www.dariocardamone.com/home"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Dario Cardamone
+                </a>
+                and
+                <a
+                  href="https://www.benjaminpugsley.com/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Benjamin Pugsley
+                </a>
+              </span>
+            </h4>
+
+          </article>
+
+
+          <!-- THIRD PROJECT -->
+          <article class="paper work-in-progress">
+
+            <h4 class="paper-title">
+              “Kill Competition for Low Price? Evidence from China's
+              Drug Procurement”
+
+              <span class="coauthor-inline">
+                — Joint with Yiren Ding
+              </span>
+            </h4>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TEACHING -->
+    <section class="section" id="teaching">
+
+      <div class="container">
+
+        <h2>Teaching</h2>
+
+        <h3 class="teaching-institution">
+          University of Notre Dame
+        </h3>
+
+
+        <!-- UNDERGRADUATE COURSES -->
+        <div class="course-group">
+
+          <h4 class="course-level">
+            Undergraduate Courses
+          </h4>
+
+          <ul class="teaching-list">
+
+            <li>
+              <strong>Principles of Microeconomics</strong>
+              — Instructor, Fall and Summer 2026
+
+              <a
+                class="syllabus-link"
+                href="Econ_10010_20010 Syllabus_Fall2026.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                Syllabus Fall 2026
+              </a>
+
+              <a
+                class="syllabus-link"
+                href="Econ_10010_20010 Syllabus_Summer2026.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                Syllabus Summer 2026
+              </a>
+
+              <span class="course-evaluation">
+                Course evaluation: Median Composite Score
+                <strong>5.0/5.0</strong>
+              </span>
+            </li>
+
+            <li>
+              <strong>Statistics for Economics</strong>
+              — Teaching Assistant, Spring 2026
+
+              <span class="course-evaluation">
+                Course evaluation: Median Composite Score
+                <strong>4.8/5.0</strong>
+              </span>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <!-- GRADUATE COURSES -->
+        <div class="course-group">
+
+          <h4 class="course-level">
+            Graduate Courses
+          </h4>
+
+          <ul class="teaching-list">
+
+            <li>
+              <strong>Graduate Econometrics II</strong>
+              — Teaching Assistant, Spring 2023
+
+              <span class="course-evaluation">
+                Course evaluation: Median Composite Score
+                <strong>5.0/5.0</strong>
+              </span>
+            </li>
+
+            <li>
+              <strong>Graduate Macroeconomics I</strong>
+              — Teaching Assistant, Fall 2022
+
+              <span class="course-evaluation">
+                Course evaluation: Median Composite Score
+                <strong>5.0/5.0</strong>
+              </span>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container footer-content">
+
+      <p>© 2026 Xinyi Li</p>
+
+      <p>
+        <a href="mailto:xli35@nd.edu">
+          Email
+        </a>
+
+        <span>·</span>
+
+        <a
+          href="Xinyi_Li_CV.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          CV
+        </a>
+
+        <span>·</span>
+
+        <a
+          href="https://www.linkedin.com/in/xinyi-li-24aa68388"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
