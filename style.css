@@ -498,8 +498,9 @@ footer a:hover {
   }
 
   .profile-name {
-    margin-bottom: 25px;
-  }
+     margin-bottom: 25px;
+     text-align: center;
+   }
 
   .profile-column {
     width: 100%;
