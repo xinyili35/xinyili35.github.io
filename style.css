@@ -100,23 +100,34 @@ nav a:hover {
 .hero {
   display: grid;
   grid-template-columns: minmax(220px, 320px) 1fr;
+  grid-template-areas:
+    "profile name"
+    "profile introduction";
+  column-gap: 65px;
+  row-gap: 0;
   align-items: start;
-  gap: 65px;
   padding-top: 75px;
   padding-bottom: 35px;
+}
+
+.profile-name {
+  grid-area: name;
+}
+
+.profile-column {
+  grid-area: profile;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
 }
 
 .headshot {
   display: block;
   width: 100%;
   max-width: 320px;
+  margin: 0 auto;
   border-radius: 3px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-
-.profile-column {
-  width: 100%;
-  max-width: 320px;
 }
 
 .portrait-address {
@@ -124,9 +135,11 @@ nav a:hover {
   color: var(--muted);
   font-size: 0.95rem;
   line-height: 1.55;
+  text-align: center;
 }
 
 .introduction {
+  grid-area: introduction;
   max-width: 680px;
 }
 
@@ -188,11 +201,6 @@ h4 {
 .job-market {
   margin-top: 22px;
   margin-bottom: 22px;
-}
-
-.affiliation {
-  color: var(--muted);
-  font-size: 0.95rem;
 }
 
 .main-links {
@@ -336,7 +344,7 @@ h4 {
   margin-bottom: 0;
   text-align: justify;
   text-justify: inter-word;
-  hyphens: auto;
+  hyphens: none;
 }
 
 
@@ -360,7 +368,7 @@ details p {
   margin-bottom: 0;
   text-align: justify;
   text-justify: inter-word;
-  hyphens: auto;
+  hyphens: none;
 }
 
 
@@ -456,6 +464,7 @@ footer a:hover {
    ========================================================= */
 
 @media (max-width: 720px) {
+
   body {
     font-size: 16px;
   }
@@ -470,24 +479,51 @@ footer a:hover {
     gap: 16px;
   }
 
+  /*
+     Mobile order:
+     1. Name
+     2. Portrait and address
+     3. Biography
+  */
+
   .hero {
     grid-template-columns: 1fr;
-    gap: 35px;
+    grid-template-areas:
+      "name"
+      "profile"
+      "introduction";
+    row-gap: 0;
     padding-top: 45px;
     padding-bottom: 30px;
   }
 
-   #research {
-     padding-top: 40px;
-   }
+  .profile-name {
+    margin-bottom: 25px;
+  }
 
   .profile-column {
-     max-width: 270px;
-   }
-   
-   .headshot {
-     max-width: 270px;
-   }
+    width: 100%;
+    max-width: 270px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  .headshot {
+    max-width: 270px;
+  }
+
+  .portrait-address {
+    text-align: center;
+  }
+
+  .introduction {
+    width: 100%;
+    max-width: none;
+  }
+
+  #research {
+    padding-top: 40px;
+  }
 
   h1 {
     font-size: 2.2rem;
